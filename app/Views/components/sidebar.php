@@ -12,7 +12,7 @@
 
         <li class="nav-item">
           <a class="nav-link <?php echo (uri_string() == 'keranjang') ? "" : "collapsed" ?>" href="keranjang">
-            <i class="bi bi-cart-fill"></i>
+            <i class="bi bi-cart-check"></i>
             <span>Keranjang</span>
           </a>
         </li>
@@ -31,6 +31,15 @@ if (session()->get('role') == 'admin') {
 <?php
 }
 ?>
+
+<li class="nav-item">
+    <a class="nav-link <?php echo (uri_string() == 'profile') ? "" : "collapsed" ?>" href="/profile">
+        <i class="bi bi-person"></i>
+        <span>Profil</span>
+    </a>
+</li>
+<!-- End Profil -->
+
       </ul>
     </aside>
     <!-- End Sidebar-->
